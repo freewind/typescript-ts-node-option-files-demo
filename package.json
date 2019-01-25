@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "demo": "ts-node hello.ts"
+    "ts-node": "ts-node --files='typings/*.d.ts' hello.ts",
+    "tsc": "tsc typings/*.d.ts hello.ts && node hello.js"
   },
   "devDependencies": {
+    "@types/node": "10.12.18",
     "ts-node": "7.0.1",
     "typescript": "3.2.2"
   }
